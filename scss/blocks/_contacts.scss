@@ -1,0 +1,140 @@
+.contacts {
+    padding: 100px 0px;
+    background-color: #151515;
+
+    &__title {
+        font-family: "Unbounded";
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin-bottom: 83px;
+        text-align: center;
+    }
+
+    &__content {
+        border-left: 0.74px solid #868686;
+        border-top: 0.74px solid #868686;
+        padding: 44px 44px 0px 44px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__fields {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 860px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__input {
+        flex: 0 1 40%;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: #fff;
+        border-radius: 44px;
+        padding: 29px 44px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        &::placeholder {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            letter-spacing: -0.04em;
+            color: #fff;
+            font-family: "Inter Tight";
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        border-radius: 147px;
+        padding: 16px 44px 17px 44px;
+        background-color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: lowercase;
+        color: #151515;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: #cecece;
+        }
+    }
+
+    &__arrow {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1250px) {
+    .contacts {
+        &__input {
+            padding: 20px 25px;
+            border-radius: 20px;
+        }
+
+        &__fields {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .contacts {
+        padding: 60px 0px;
+
+        &__title {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            padding: 22px 12px 0px 12px;
+        }
+
+        &__input {
+            font-size: 18px;
+            width: 100%;
+
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+
+        &__button {
+            font-size: 20px;
+        }
+
+        &__arrow {
+            width: 52px;
+            height: 52px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900);
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/achieve";
+@import "./blocks/contacts";
+@import "./blocks/faq";
+@import "./blocks/why";
+@import "./blocks/training";
+@import "./blocks/cases";
+@import "./blocks/home";
